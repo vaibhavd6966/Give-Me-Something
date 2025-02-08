@@ -1,0 +1,68 @@
+/* HomePage.css */
+.home-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .content-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  
+  .text-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .romantic-text {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .change-button {
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .change-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .romantic-text {
+      font-size: 3.75rem;
+    }
+  }

@@ -1,0 +1,212 @@
+/* styles/LoveLetter.css */
+.letter-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe6e6 0%, #ffb6c1 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  
+  .letter-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .envelope-container {
+    position: absolute;
+    z-index: 100;
+    transition: all 0.5s ease;
+  }
+  
+  .letter-wrapper.opened .envelope-container {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  
+  .envelope {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .envelope:hover {
+    transform: scale(1.02);
+  }
+  
+  .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ff69b4;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .flap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff1493;
+    clip-path: polygon(0 0, 50% 50%, 100% 0);
+    transform-origin: top;
+    transition: transform 0.4s ease;
+    z-index: 2;
+  }
+  
+  .pocket {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ff69b4;
+    border-radius: 0 0 5px 5px;
+    z-index: 1;
+  }
+  
+  .click-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.2rem;
+    z-index: 3;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .full-letter {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 2rem;
+  }
+  
+  .letter-wrapper.opened .full-letter {
+    opacity: 1;
+  }
+  
+  .paper {
+    background: white;
+    padding: 3rem;
+    max-width: 800px;
+    width: 100%;
+    max-height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform: translateY(100vh);
+    transition: transform 0.5s ease;
+    overflow-y: auto;
+  }
+  
+  .letter-wrapper.opened .paper {
+    transform: translateY(0);
+  }
+  
+  .letter-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .letter-content h1 {
+    color: #ff1493;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Playball', cursive;
+  }
+  
+  .letter-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  
+  .signature {
+    text-align: right;
+    margin-top: 3rem;
+    color: #ff1493;
+    font-style: italic;
+  }
+  
+  .signature p {
+    margin: 0;
+    line-height: 1.4;
+    color: #ff1493;
+    text-align: right;
+    font-size: 1.2rem;
+  }
+  
+  /* Animation */
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .envelope:not(.open) {
+    animation: heartbeat 2s infinite;
+  }
+  
+  /* Mobile Responsive Design */
+  @media screen and (max-width: 768px) {
+    .letter-page {
+      padding: 1rem;
+    }
+  
+    .envelope {
+      width: 280px;
+      height: 180px;
+    }
+  
+    .paper {
+      padding: 2rem 1.5rem;
+    }
+  
+    .letter-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .letter-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  
+    .signature p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Scrollbar Styling */
+  .paper::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .paper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .paper::-webkit-scrollbar-thumb {
+    background: #ff69b4;
+    border-radius: 4px;
+  }
+  
+  .paper::-webkit-scrollbar-thumb:hover {
+    background: #ff1493;
+  }

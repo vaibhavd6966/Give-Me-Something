@@ -1,0 +1,180 @@
+/* styles/BirthdayWish.css */
+.birthday-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffebee 0%, #fce4ec 100%);
+  }
+  
+  /* First Section Styles */
+  .wish-section {
+    min-height: 100vh;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .content-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .wish-text {
+    max-width: 600px;
+  }
+  
+  .wish-text h1 {
+    font-size: 3rem;
+    color: #ff1493;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .wish-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .video-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .video-side video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Second Section Styles */
+  .journey-section {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+  }
+  
+  .journey-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff1493;
+    margin-bottom: 3rem;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .birthday-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
+  
+  .birthday-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .birthday-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .birthday-card h3 {
+    font-size: 2rem;
+    color: #ff1493;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .birthday-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: justify;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .birthday-card {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  /* Mobile Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .wish-section {
+      flex-direction: column-reverse;
+      padding: 1rem;
+    }
+  
+    .content-side {
+      padding: 1rem;
+    }
+  
+    .wish-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .wish-text p {
+      font-size: 1.1rem;
+    }
+  
+    .video-side {
+      height: 40vh;
+    }
+  
+    .journey-section {
+      padding: 2rem 1rem;
+    }
+  
+    .birthday-cards {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+    }
+  
+    .birthday-card {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  
+    .journey-section h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .wish-text h1 {
+      font-size: 2rem;
+    }
+  
+    .wish-text p {
+      font-size: 1rem;
+    }
+  
+    .birthday-card h3 {
+      font-size: 1.8rem;
+    }
+  
+    .birthday-card p {
+      font-size: 1rem;
+    }
+  }

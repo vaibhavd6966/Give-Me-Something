@@ -1,0 +1,124 @@
+/* styles/Memories.css */
+.memories-container {
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffe6f0 0%, #ffd1dc 100%);
+  }
+  
+  .memories-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff1493;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .love-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(255, 20, 147, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .love-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(255, 20, 147, 0.2);
+  }
+  
+  .love-text {
+    font-size: 1.25rem;
+    color: #ff69b4;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+  /* Special card layouts */
+  .card-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  }
+  
+  .card-1 .love-text {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .card-4 {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%);
+  }
+  
+  .card-4 .love-text {
+    color: white;
+  }
+  
+  .card-7 {
+    background: linear-gradient(135deg, #ffc0cb 0%, #ff69b4 100%);
+  }
+  
+  .card-7 .love-text {
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .bento-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    
+    .card-1 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    
+    .card-4 {
+      grid-column: span 1;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .bento-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .card-1, .card-4 {
+      grid-column: span 1;
+    }
+    
+    .memories-title {
+      font-size: 2rem;
+    }
+    
+    .love-text {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Add magical sparkle animation */
+  @keyframes sparkle {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .love-card:hover {
+    animation: sparkle 1s infinite;
+  }
