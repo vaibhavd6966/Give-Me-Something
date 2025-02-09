@@ -6,6 +6,7 @@ import Timeline from "./components/Timeline";
 import LoveLetter from "./components/LoveLetter";
 import PlaylistPage from "./components/Playlist";
 import BirthdayWish from "./components/BirthdayWish";
+import Quiz from "./components/Quiz";
 // import QuizModule from "./components/QuizModule";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <LoveLetter />
       <PlaylistPage />
       <BirthdayWish />
+      <Quiz />
       {/* <QuizModule /> */}
     </div>
   );
