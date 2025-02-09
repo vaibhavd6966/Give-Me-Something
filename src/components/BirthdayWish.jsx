@@ -30,7 +30,7 @@ const BirthdayWish = () => {
         <div className="video-side">
           {/* Replace src with your video URL */}
           <video autoPlay loop muted>
-            <source src="/songs/vid" type="video/mp4" />
+            <source src="/songs/video2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
