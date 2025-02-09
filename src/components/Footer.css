@@ -1,0 +1,100 @@
+.valentine-footer {
+    background: linear-gradient(to bottom, #ffe6f0, #fff0f6);
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    border-top: 3px solid #ffb6c1;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hearts-decorator {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.love-messages {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.message {
+    color: #d4145a;
+    font-size: 18px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.message:hover {
+    transform: scale(1.05);
+    color: #ff1493;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ffb6c1;
+    color: #d4145a;
+    font-size: 16px;
+}
+
+/* Animations */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .valentine-footer {
+        padding: 30px 15px;
+    }
+
+    .love-messages {
+        gap: 10px;
+    }
+
+    .message {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .hearts-decorator {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .message {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+}

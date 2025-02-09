@@ -6,8 +6,8 @@ import Timeline from "./components/Timeline";
 import LoveLetter from "./components/LoveLetter";
 import PlaylistPage from "./components/Playlist";
 import BirthdayWish from "./components/BirthdayWish";
-import Quiz from "./components/Quiz";
-// import QuizModule from "./components/QuizModule";
+import QuizModule from "./components/ValentineQuiz";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -18,8 +18,8 @@ export default function App() {
       <LoveLetter />
       <PlaylistPage />
       <BirthdayWish />
-      <Quiz />
-      {/* <QuizModule /> */}
+      <QuizModule />
+      <Footer />
     </div>
   );
 }

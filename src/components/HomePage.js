@@ -5,10 +5,14 @@ const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const backgroundImages = [
-    '/api/placeholder/1920/1080',
-    '/api/placeholder/1920/1080',
-    '/api/placeholder/1920/1080',
-    '/api/placeholder/1920/1080'
+    '/img/bg1.jpg',
+    '/img/bg22.jpg',
+    '/img/bg3.jpg',
+    '/img/bg4.jpg',
+    '/img/bg5.jpg',
+    '/img/bg6.jpg',
+    '/img/bg7.jpeg'
+
   ];
 
   const handleImageChange = () => {
