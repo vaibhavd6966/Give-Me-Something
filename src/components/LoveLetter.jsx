@@ -19,23 +19,23 @@ const LoveLetter = () => {
         <div className="full-letter">
           <div className="paper">
             <div className="letter-content">
-              <h1>My Dearest Love,</h1>
+              <h1>My Dearest Love❤️,</h1>
               
-              <p>In the quiet moments when I think of you, my heart fills with a warmth that words can barely describe. You've become not just my girlfriend, but my best friend - the person who makes every day brighter just by being in it.</p>
+              <p>From the moment I first saw you, something inside me changed. Your beautiful eyes made me believe in love at first sight, and that one glance became the beginning of everything. I still remember asking my friends about your name, hoping to turn that fleeting moment into something more. Who knew that a simple "hi" would be the spark that colored my black-and-white life forever?</p>
               
-              <p>Remember when we first met? It feels like yesterday and forever ago all at once. Since then, you've colored my world in shades I never knew existed. Your laugh has become my favorite melody, and your smile lights up even my darkest days.</p>
+              <p>I cherish every memory we’ve made together the first time I messaged you, our first real conversation, the day I confessed my feelings, and even when you said, "We can be good friends forever." Back then, I didn't fully understand the depth of those words, but now I do. Our bond was never planned, yet it turned into something more beautiful than I could have ever imagined.</p>
               
-              <p>With you, even the simplest moments become magical. Whether we're sharing coffee in comfortable silence, laughing at our inside jokes, or dreaming about our future together - every moment with you feels like a gift.</p>
+              <p>Our journey has been filled with special moments the time you took the first step and messaged me, making me feel the warmth of our friendship, our unexpected hangout at Band Stand, and our first birthday together. You made my last birthday unforgettable, making me feel like both a king and a prince at the same time. And your birthday? I loved being there, celebrating you, even though I was late (sorry for that again!). But most of all, I loved just being with you.</p>
               
-              <p>You understand me in ways I never thought possible, support my dreams as if they were your own, and love me despite all my quirks (and maybe even because of them). You're the first person I want to share good news with, and the only one I need when times are tough.</p>
+              <p>I can never forget the night I held your hand and let my emotions flow in front of you. That night was different it was the first time we spent the night together, laughing, talking, and just being us. It was a moment that made me realize how truly special you are to me. Every moment with you is precious, and every second spent by your side is a treasure I hold close to my heart.</p>
               
-              <p>I love how you scrunch your nose when you laugh, how passionate you get about the things you care about, and how you always know exactly what to say to make everything better. You're not just my partner - you're my home, my peace, my favorite person.</p>
+              <p>You are my world, my happiness, and the one who makes my heart smile. No matter what happens, you will always be my love forever. I promise to stand by your side, to cherish you, and to love you endlessly. Your presence in my life is the most beautiful blessing, and I thank the universe every day for bringing you into my life.</p>
               
-              <p>Thank you for being you, for choosing me, for making every day an adventure. I love you more than yesterday and less than tomorrow.</p>
+              <p>Stay healthy, my love. Take care of yourself because you mean everything to me. I love you beyond words, beyond time, beyond everything. Forever yours. ❤️✨</p>
 
               <div className="signature">
-                <p>~Yours</p>
-                <p>Your Love Pujari</p>
+                <p>With all my love,</p>
+                <p>Vaibhav</p>
               </div>
             </div>
           </div>

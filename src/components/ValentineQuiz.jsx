@@ -7,16 +7,16 @@ const ValentineQuiz = () => {
   const [answers, setAnswers] = useState({});
 
   const questions = [
-    "What's your favorite romantic movie?",
-    "What's your ideal date night?",
-    "What's your love language?",
-    "What's your favorite love song?",
-    "What's the most romantic place you've been to?",
-    "What's your dream Valentine's Day gift?",
-    "What's your favorite memory with your loved one?",
-    "What's your perfect romantic dinner?",
-    "What's the most romantic gesture someone has done for you?",
-    "What does true love mean to you?"
+    "What was your first impression of me?",
+    "If we could go on a trip anywhere, where would you want to go?",
+    "If you could describe me in three words, what would they be?",
+    "What's your favorite memory of us together?",
+    "When do you feel the most comfortable and safe with me?",
+    "What’s one weird or funny habit I have that you find cute?",
+    "If we ever had a big fight, what would you want me to remember?",
+    "When did you first realize we had a strong connection?",
+    "What’s one thing you’ve always wanted to tell me but never did?",
+    "If we could pause time and stay in one moment forever, which one would you choose?"
   ];
 
   const handleStart = () => {

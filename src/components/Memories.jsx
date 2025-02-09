@@ -16,7 +16,7 @@ const Memories = () => {
 
   return (
     <div className="memories-container">
-      <h1 className="memories-title">Our Magical Moments</h1>
+      <h1 className="memories-title">Your Magic in Words...</h1>
       <div className="bento-grid">
         {loveQuotes.map((quote, index) => (
           <LoveCard 

@@ -30,7 +30,7 @@ const BirthdayWish = () => {
         <div className="video-side">
           {/* Replace src with your video URL */}
           <video autoPlay loop muted>
-            <source src="/api/placeholder/video" type="video/mp4" />
+            <source src="/songs/vid" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -42,26 +42,17 @@ const BirthdayWish = () => {
         <div className="birthday-cards">
           <div className="birthday-card">
             <h3>2023</h3>
-            <p>Our first birthday celebration together. Remember how we danced under 
-              the stars? That makeshift picnic in the park was perfect, just like 
-              your smile when you saw the surprise. It was the beginning of our 
-              beautiful journey of celebrating each other.</p>
+            <p>Do you remember our first birthday together? Celebrating you felt magical, and sharing laughs with Siddhi made it even more special (you still owe me a party! 😉). That day, I realized how much I love seeing you happy your smile, your laughter, your sparkle. Your birthday became just as important to me as mine. You are my world, my happiness, my love forever, and I can't wait for many more. ❤️✨</p>
           </div>
           
           <div className="birthday-card">
             <h3>2024</h3>
-            <p>This year made us stronger and closer. From midnight surprises to 
-              weekend getaways, every moment was magical. Your birthday brought us 
-              even closer, and seeing your eyes light up with joy made my heart 
-              skip a beat. Here's to growing together.</p>
+            <p>Do you remember your last birthday? Being with you, celebrating you, made it unforgettable. I still cherish the fun, the laughter, and every little moment. And yes, I was late sorry for that but every second with you was perfect. You mean the world to me, and I just want to keep making you feel as special as you are. ❤️</p>
           </div>
           
           <div className="birthday-card">
             <h3>2025</h3>
-            <p>Looking forward to making this your most special birthday yet. 
-              With each passing year, my love for you grows stronger. I promise 
-              to make every birthday better than the last, filling your life with 
-              endless joy, surprises, and countless reasons to smile.</p>
+            <p><center>Happy Birthday, my love! ❤️</center> <br/>We may not be together right now, but I’ll still make this moment special for you. We’ve had reasons to drift apart, yet you always chose us, and I’m so grateful for that. No matter what, I’ll always be here for you. Today is your day, and you deserve all the love and happiness in the world. 💖✨</p>
           </div>
         </div>
       </section>

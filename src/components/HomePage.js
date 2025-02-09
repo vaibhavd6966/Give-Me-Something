@@ -5,8 +5,8 @@ const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const backgroundImages = [
-    '/img/bg1.jpg',
-    '/img/bg22.jpg',
+    'https://wallpapers.com/images/featured/valentines-desktop-p16yhekd7g3u2rz5.jpg',
+    'https://e0.pxfuel.com/wallpapers/155/714/desktop-wallpaper-romantic-for-laptop.jpg',
     '/img/bg3.jpg',
     '/img/bg4.jpg',
     '/img/bg5.jpg',
